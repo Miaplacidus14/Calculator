@@ -1,0 +1,47 @@
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen {
+    background-color: black;
+    width: 365px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    margin-left: 3px;
+}
+
+.touches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstLine, .secondLine, .thirdLine, .fourthLine, .fifthLine {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+button {
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+}
+
+.rectangle {
+    width: 175px;
+    height: 80px;
+}
