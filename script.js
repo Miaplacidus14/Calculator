@@ -10,87 +10,15 @@ function affichage () {
     let float = false;
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            if (button.textContent === '0') {
-                screen.textContent += '0';
+            if (button.textContent === '0' || button.textContent === '1' || button.textContent === '2' || button.textContent === '3' || button.textContent === '4' || button.textContent === '5' || button.textContent === '6' || button.textContent === '7' || button.textContent === '8' || button.textContent === '9') {
+                screen.textContent += button.textContent;
                 if (tour === 0) {
-                    firstNumber += '0';
-                } else if (operator === '/'){
+                    firstNumber += button.textContent;
+                } else if (operator === '/' && button.textContent === '0'){
                     screen.textContent = 'ERROR';
                 } else {
-                    secondNumber += '0';
+                    secondNumber += button.textContent;
                 }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '1') {
-                screen.textContent += '1';
-                if (tour === 0) {
-                    firstNumber += '1';
-                } else {
-                    secondNumber += '1';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '2') {
-                screen.textContent += '2';
-                if (tour === 0) {
-                    firstNumber += '2';
-                } else {
-                    secondNumber += '2';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '3') {
-                screen.textContent += '3';
-                if (tour === 0) {
-                    firstNumber += '3';
-                } else {
-                    secondNumber += '3';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '4') {
-                screen.textContent += '4';
-                if (tour === 0) {
-                    firstNumber += '4';
-                } else {
-                    secondNumber += '4';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '5') {
-                screen.textContent += '5';
-                if (tour === 0) {
-                    firstNumber += '5';
-                } else {
-                    secondNumber += '5';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '6') {
-                screen.textContent += '6';
-                if (tour === 0) {
-                    firstNumber += '6';
-                } else {
-                    secondNumber += '6';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '7') {
-                screen.textContent += '7';
-                if (tour === 0) {
-                    firstNumber += '7';
-                } else {
-                    secondNumber += '7';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '8') {
-                screen.textContent += '8';
-                if (tour === 0) {
-                    firstNumber += '8';
-                } else {
-                    secondNumber += '8';
-                }
-                lastInputIsOperator = false;
-            } else if (button.textContent === '9') {
-                screen.textContent += '9';
-                if (tour === 0) {
-                    firstNumber += '9';
-                } else {
-                    secondNumber += '9';
-                } 
                 lastInputIsOperator = false;
             } else if (button.textContent === '=') {
                 screen.textContent += ' = ';
